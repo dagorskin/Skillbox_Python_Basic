@@ -7,13 +7,14 @@ print('---' * 15)  # Разделитель.
 # Для нахождения номера потерянной карты из первой суммы вычел вторую.
 
 print('Вас приветствует настольная карточная игра \"Warhammer: 40000.\"')
-total_card, input_card, card = 0, 0, 0
+total_card, input_card = 0, 0
 last_card = int(input('Введите номер последней карточки: '))
 for card in range(1, last_card):
     if card != last_card:
         card_available = int(input('Введите номер оставшейся карточки: '))
         input_card += card_available
     total_card += card
+total_card += card
 lost_card = total_card - input_card + 1
 print('Потерявшиеся карточка имеет номер: ' + str(lost_card) + '.')
 
