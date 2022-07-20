@@ -3,7 +3,7 @@ print('---' * 15)  # Разделитель.
 
 print('Вас приветствует программа \"1К: Зарплата\".')
 total_profit = 0
-for month in range(1,13):
+for month in range(1, 13):
     profit = int(input('Введите заработную плату сотрудника за ' + str(month) + ' месяц: '))
     total_profit += profit
 medium_profit = total_profit // 12

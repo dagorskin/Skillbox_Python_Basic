@@ -1,7 +1,7 @@
 print('Задача 7. Отрезок')
 print('---' * 15)  # Разделитель.
 
-sum_numbers, number_numbers  = 0, 0
+sum_numbers, number_numbers = 0, 0
 first_num = int(input('Введите первое число: '))
 second_num = int(input('Введите второе число: '))
 for number in range(first_num, second_num):  # Цикл с диапазоном от первого до второго числа.

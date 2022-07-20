@@ -1,13 +1,13 @@
 print('Задача 2. Должники')
 print('---' * 15)  # Разделитель.
-quantity_valid_numbers, collection_valid_numbers = 0, []  # Создание переменной и списка.
+quantity_valid_numbers, collection_valid_num = 0, []  # Создание переменной и списка.
 print('Здравствуйте! Вас приветствует \"МирПрогБанк\".')
 for count in range(1, 11):
-    debtor_number = int(input('Введите номер очередного должника: '))
+    debtor_number = int(input('Введите номер очередного должника (от 1 до 10 включительно): '))
     if debtor_number % 2 == 0 and debtor_number >= 0:
         quantity_valid_numbers += 1
-        collection_valid_numbers.append(debtor_number)
-print('Количество должников ', quantity_valid_numbers, ', их номера: ', str(collection_valid_numbers)[1:-1],'.', sep='')
+        collection_valid_num.append(debtor_number)
+print('Количество должников ', quantity_valid_numbers, ', их номера: ', str(collection_valid_num)[1:-1], '.', sep='')
 
 # Должники и законопослушные граждане хранятся в одной базе банка.
 # Из этой базы нам выделяются по 10 человек, у каждого из которых есть свой номер.
